@@ -1,26 +1,52 @@
 [
   {
     "id": 1,
-    "name": "Tech Conference 2026",
-    "description": "Join industry leaders for a day of innovation and networking.",
-    "date": "2026-04-15",
-    "time": "09:00 AM",
-    "location": "San Francisco, CA"
+    "name": "Tech Summit 2026",
+    "date": "2026-04-10",
+    "time": "10:00 AM",
+    "location": "Gulberg Arena, Lahore",
+    "description": "Pakistan's biggest annual tech conference featuring AI, Web3, and startup pitches.",
+    "category": "Technology",
+    "seats": 200
   },
   {
     "id": 2,
-    "name": "Music Festival",
-    "description": "Experience live performances from top artists across multiple stages.",
-    "date": "2026-05-20",
-    "time": "12:00 PM",
-    "location": "Austin, TX"
+    "name": "UX Design Workshop",
+    "date": "2026-04-15",
+    "time": "02:00 PM",
+    "location": "The Hive, Islamabad",
+    "description": "Hands-on workshop covering Figma, design systems, and user research techniques.",
+    "category": "Design",
+    "seats": 40
   },
   {
     "id": 3,
     "name": "Startup Pitch Night",
-    "description": "Watch innovative startups pitch their ideas to top investors.",
-    "date": "2026-03-28",
-    "time": "06:00 PM",
-    "location": "New York, NY"
+    "date": "2026-04-20",
+    "time": "06:30 PM",
+    "location": "Enablers Hub, Rawalpindi",
+    "description": "Present your startup idea to investors and win seed funding. Open to all founders.",
+    "category": "Business",
+    "seats": 80
+  },
+  {
+    "id": 4,
+    "name": "Photography Masterclass",
+    "date": "2026-04-25",
+    "time": "11:00 AM",
+    "location": "F-6 Community Center, Islamabad",
+    "description": "Learn portrait and street photography from award-winning photographers.",
+    "category": "Arts",
+    "seats": 30
+  },
+  {
+    "id": 5,
+    "name": "Cybersecurity Bootcamp",
+    "date": "2026-05-02",
+    "time": "09:00 AM",
+    "location": "NUST, Islamabad",
+    "description": "Two-day intensive bootcamp on ethical hacking, OSINT, and network security.",
+    "category": "Technology",
+    "seats": 60
   }
 ]
