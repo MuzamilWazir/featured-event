@@ -1,6 +1,6 @@
 # Eventify — Featured Events Page
 
-![Eventify OG Image](./ogImage.png)
+![Eventify OG Image](public/ogImage.png)
 
 ---
 
