@@ -252,19 +252,10 @@ http://localhost:3000
 | Environment | Storage |
 |------------|---------|
 | **Demo/Development** | In-memory array + `data/events.json` |
-| **Production** | PostgreSQL (Prisma ORM) or Supabase |
 
 ---
 
-## 🔒 Environment Variables (Optional for Production)
 
-```env
-# Database (for production)
-DATABASE_URL="postgresql://user:password@localhost:5432/eventify"
-
-# Email Service (for contact form)
-RESEND_API_KEY="re_xxxxxx"
-```
 
 ---
 
@@ -298,4 +289,3 @@ MIT License — feel free to use for personal or commercial projects.
 
 Built with ❤️ using Next.js, TypeScript, and Tailwind CSS
 
-**Contact:** hello@eventify.pk | www.eventify.pk
