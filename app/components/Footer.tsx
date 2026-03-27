@@ -2,11 +2,13 @@ export default function Footer(): React.JSX.Element {
   return (
     <footer className="bg-gray-900 text-white">
 
+      {/* ── Main band ── */}
       <div className="border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10 items-center">
 
+          {/* Brand */}
           <div className="flex items-center gap-4">
-            <div className="w-16 h-16 bg-red-600 flex items-center justify-center text-2xl font-black text-white flex-shrink-0">
+            <div className="w-16 h-16 bg-red-600 flex items-center justify-center text-2xl font-black text-white shrink-0">
               E
             </div>
             <div>
@@ -14,13 +16,14 @@ export default function Footer(): React.JSX.Element {
                 <span className="text-white">Eventify</span>{" "}
                 <span className="text-red-500">Team</span>
               </p>
-              <p className="text-gray-500 text-xs uppercase tracking-[3px] mt-1">
+              <p className="text-gray-500 text-xs uppercase tracking-widest mt-1">
                 Event Platform · Pakistan
               </p>
               <div className="w-10 h-0.5 bg-red-600 mt-2" />
             </div>
           </div>
 
+          {/* Contact info */}
           <div className="flex flex-col gap-2.5 text-sm text-gray-400">
             {[
               { icon: "📞", text: "+92 339 411 1994" },
@@ -34,11 +37,12 @@ export default function Footer(): React.JSX.Element {
             ))}
           </div>
 
+          {/* Logo + slogan */}
           <div className="flex flex-col items-start md:items-end gap-1">
             <span className="text-4xl font-black tracking-tight">
               <span className="text-red-500">Event</span>ify
             </span>
-            <span className="text-xs text-gray-600 uppercase tracking-[3px]">
+            <span className="text-xs text-gray-600 uppercase tracking-widest">
               Discover · Connect · Register
             </span>
           </div>
@@ -46,6 +50,7 @@ export default function Footer(): React.JSX.Element {
         </div>
       </div>
 
+      {/* ── Red address + socials bar ── */}
       <div className="bg-red-600">
         <div className="max-w-7xl mx-auto px-6 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2 text-xs text-red-100">
@@ -73,6 +78,7 @@ export default function Footer(): React.JSX.Element {
         </div>
       </div>
 
+      {/* ── Copyright ── */}
       <div className="bg-black py-3 text-center text-xs text-gray-600">
         © {new Date().getFullYear()} Eventify. All rights reserved. Built with Next.js + TypeScript.
       </div>

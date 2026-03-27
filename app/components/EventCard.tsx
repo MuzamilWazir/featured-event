@@ -13,7 +13,7 @@ const categoryColors: Record<string, string> = {
   Other:      "bg-gray-100 text-gray-600 border border-gray-200",
 };
 
-export default function EventCard({ event, onRegister }: Props): React.JSX.Element {
+export default function EventCard({ event, onRegister }: Props) {
   const colorClass = categoryColors[event.category] ?? categoryColors.Other;
 
   const formattedDate = new Date(event.date + "T00:00:00").toLocaleDateString(
@@ -23,10 +23,11 @@ export default function EventCard({ event, onRegister }: Props): React.JSX.Eleme
 
   return (
     <div className="group bg-white border border-gray-100 hover:border-red-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+      {/* Hover accent bar */}
       <div className="h-1 bg-gray-100 group-hover:bg-red-600 transition-colors duration-300" />
 
       <div className="p-6 flex flex-col flex-1">
-        <span className={`text-[10px] font-black px-3 py-1 uppercase tracking-[2px] w-fit mb-4 ${colorClass}`}>
+        <span className={`text-xs font-black px-3 py-1 uppercase tracking-widest w-fit mb-4 ${colorClass}`}>
           {event.category}
         </span>
 
@@ -55,7 +56,7 @@ export default function EventCard({ event, onRegister }: Props): React.JSX.Eleme
 
         <button
           onClick={onRegister}
-          className="w-full bg-gray-900 hover:bg-red-600 text-white font-black py-3 text-xs uppercase tracking-[2px] transition-all duration-300 active:scale-[0.98]"
+          className="w-full bg-gray-900 hover:bg-red-600 text-white font-black py-3 text-xs uppercase tracking-widest transition-all duration-300 active:scale-[0.98]"
         >
           Register Now
         </button>

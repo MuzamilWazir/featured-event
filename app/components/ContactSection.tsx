@@ -38,8 +38,9 @@ export default function ContactSection(): React.JSX.Element {
     <section id="contact" className="bg-white py-24 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
 
+        {/* ── Left: Form ── */}
         <div>
-          <span className="text-xs font-black uppercase tracking-[4px] text-red-600 border-l-4 border-red-600 pl-3 block mb-4">
+          <span className="text-xs font-black uppercase tracking-widest text-red-600 border-l-4 border-red-600 pl-3 block mb-4">
             Get In Touch
           </span>
           <h2 className="text-4xl font-black text-gray-900 mb-3 tracking-tight">
@@ -87,27 +88,25 @@ export default function ContactSection(): React.JSX.Element {
           <button
             onClick={handleSubmit}
             disabled={loading}
-            className="bg-gray-900 hover:bg-red-600 disabled:bg-gray-300 text-white font-black px-10 py-3.5 uppercase text-xs tracking-[3px] transition-all duration-300"
+            className="bg-gray-900 hover:bg-red-600 disabled:bg-gray-300 text-white font-black px-10 py-3.5 uppercase text-xs tracking-widest transition-all duration-300"
           >
             {loading ? "Sending..." : "Submit"}
           </button>
         </div>
 
+        {/* ── Right: Info Panel ── */}
         <div className="relative hidden md:block">
           <div className="absolute inset-0 bg-gray-50 border border-gray-100 -rotate-2" />
           <div className="relative z-10 p-12 text-center">
-
             <div className="w-24 h-24 bg-red-600 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 shadow-xl">
               💬
             </div>
-
             <h3 className="text-2xl font-black text-gray-900 mb-2 tracking-tight">
               We&apos;re Online
             </h3>
             <p className="text-gray-500 text-sm mb-8 max-w-xs mx-auto leading-relaxed">
-              Our team typically responds within 24 hours. Don&apos;t hesitate to reach out!
+              Our team typically responds within 24 hours.
             </p>
-
             <div className="flex flex-col gap-3 text-sm text-gray-600 mb-8">
               {[
                 { icon: "📞", text: "+92 339 411 1994" },
@@ -122,20 +121,14 @@ export default function ContactSection(): React.JSX.Element {
                 </div>
               ))}
             </div>
-
             <div className="flex items-center justify-center gap-3">
-              {[
-                { icon: "f",  label: "Facebook" },
-                { icon: "𝕏",  label: "Twitter"  },
-                { icon: "in", label: "LinkedIn"  },
-              ].map((s) => (
+              {["f", "𝕏", "in"].map((icon) => (
                 <a
-                  key={s.label}
+                  key={icon}
                   href="#"
-                  aria-label={s.label}
                   className="w-9 h-9 bg-gray-900 hover:bg-red-600 text-white rounded-full flex items-center justify-center text-xs font-bold transition-all"
                 >
-                  {s.icon}
+                  {icon}
                 </a>
               ))}
             </div>
