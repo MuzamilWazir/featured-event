@@ -18,3 +18,11 @@ export interface Registration {
   phone: string;
   registeredAt: string;
 }
+
+export interface ContactMessage {
+  id: string;
+  name: string;
+  email: string;
+  message: string;
+  sentAt: string;
+}

@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-red: #dc2626;
+  --color-brand-black: #111827;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
 body {
   font-family: Inter, system-ui, sans-serif;
 }
